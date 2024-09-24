@@ -13,3 +13,7 @@ Initialize MyST Project: Run the following command to create a myst.yml configur
 myst init
 
 ![alt text](image.png)
+
+
+Once you are ready to publish run this command locally
+myst build --html
