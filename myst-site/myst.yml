@@ -1,0 +1,25 @@
+version: 1
+project:
+  title: My Machine Learning Site
+  description: A collection of Jupyter Notebooks on machine learning.
+  authors:
+    - name: Alex Sciuto
+      affiliations:
+        - University of Central Florida
+site:
+  template: book-theme
+  nav:
+    - title: Home
+      url: index.md
+    - title: Intro
+      children:
+        - title: Introduction Notebook
+          url: intro/01-intro.ipynb
+        - title: Getting Started
+          url: intro/02-getting-started.ipynb
+    - title: Analysis
+      children:
+        - title: Analysis Notebook
+          url: analysis/02-analysis.ipynb
+        - title: Data Visualization
+          url: analysis/02-data-visualization.ipynb
