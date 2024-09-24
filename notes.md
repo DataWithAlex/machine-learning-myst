@@ -11,3 +11,5 @@ cd myst-site
 Initialize MyST Project: Run the following command to create a myst.yml configuration file and necessary folders:
 
 myst init
+
+![alt text](image.png)
