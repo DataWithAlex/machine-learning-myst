@@ -6,102 +6,77 @@ project:
     - name: Alex Sciuto
       affiliations:
         - University of Central Florida
-site:
-  template: book-theme
-  nav:
-    - title: Home
-      url: index.md
+  toc:
+    - file: index.md
     - title: Introduction
       children:
-        - title: What is Machine Learning?
-          url: intro/01-intro-to-ml.ipynb
-        - title: Types of Machine Learning
-          url: intro/02-types-of-ml.ipynb
-        - title: Occam's Razor in Machine Learning
-          url: intro/03-occams-razor.ipynb
+        - file: intro/01-intro-to-ml.ipynb
+        - file: intro/02-types-of-ml.ipynb
+        - file: intro/03-occams-razor.ipynb
     - title: Basic Statistics and Data Exploration
       children:
-        - title: Descriptive Statistics
-          url: stats/01-descriptive-statistics.ipynb
-        - title: Data Distribution
-          url: stats/02-data-distribution.ipynb
-        - title: Correlation and Covariance
-          url: stats/03-correlation-covariance.ipynb
+        - file: stats/01-descriptive-statistics.ipynb
+        - file: stats/02-data-distribution.ipynb
+        - file: stats/03-correlation-covariance.ipynb
     - title: Data Preprocessing and Feature Engineering
       children:
-        - title: Handling Missing Values
-          url: preprocessing/01-missing-values.ipynb
-        - title: Feature Scaling and Normalization
-          url: preprocessing/02-feature-scaling.ipynb
-        - title: Categorical Data Encoding
-          url: preprocessing/03-categorical-encoding.ipynb
-        - title: Feature Selection Techniques
-          url: preprocessing/04-feature-selection.ipynb
+        - file: preprocessing/01-missing-values.ipynb
+        - file: preprocessing/02-feature-scaling.ipynb
+        - file: preprocessing/03-categorical-encoding.ipynb
+        - file: preprocessing/04-feature-selection.ipynb
     - title: Simple Models and Baselines
       children:
-        - title: Mean and Median as Predictors
-          url: simple/01-mean-median.ipynb
-        - title: Linear Regression
-          url: simple/02-linear-regression.ipynb
-        - title: Logistic Regression
-          url: simple/03-logistic-regression.ipynb
+        - file: simple/01-mean-median.ipynb
+        - file: simple/02-linear-regression.ipynb
+        - file: simple/03-logistic-regression.ipynb
     - title: Decision Trees and Ensemble Methods
       children:
-        - title: Decision Trees
-          url: ensemble/01-decision-trees.ipynb
-        - title: Random Forests
-          url: ensemble/02-random-forests.ipynb
-        - title: Gradient Boosting and XGBoost
-          url: ensemble/03-gradient-boosting.ipynb
+        - file: ensemble/01-decision-trees.ipynb
+        - file: ensemble/02-random-forests.ipynb
+        - file: ensemble/03-gradient-boosting.ipynb
     - title: Support Vector Machines (SVM)
       children:
-        - title: Linear SVM
-          url: svm/01-linear-svm.ipynb
-        - title: Kernel SVM
-          url: svm/02-kernel-svm.ipynb
+        - file: svm/01-linear-svm.ipynb
+        - file: svm/02-kernel-svm.ipynb
     - title: Clustering and Dimensionality Reduction
       children:
-        - title: K-Means Clustering
-          url: clustering/01-k-means.ipynb
-        - title: Hierarchical Clustering
-          url: clustering/02-hierarchical-clustering.ipynb
-        - title: Principal Component Analysis (PCA)
-          url: clustering/03-pca.ipynb
+        - file: clustering/01-k-means.ipynb
+        - file: clustering/02-hierarchical-clustering.ipynb
+        - file: clustering/03-pca.ipynb
     - title: Advanced Regression Techniques
       children:
-        - title: Ridge and Lasso Regression
-          url: advanced-regression/01-ridge-lasso.ipynb
-        - title: Polynomial Regression
-          url: advanced-regression/02-polynomial.ipynb
+        - file: advanced-regression/01-ridge-lasso.ipynb
+        - file: advanced-regression/02-polynomial.ipynb
     - title: Neural Networks and Deep Learning
       children:
-        - title: Multilayer Perceptron (MLP)
-          url: deep-learning/01-mlp.ipynb
-        - title: Convolutional Neural Networks (CNN)
-          url: deep-learning/02-cnn.ipynb
-        - title: Recurrent Neural Networks (RNN) and LSTMs
-          url: deep-learning/03-rnn-lstm.ipynb
+        - file: deep-learning/01-mlp.ipynb
+        - file: deep-learning/02-cnn.ipynb
+        - file: deep-learning/03-rnn-lstm.ipynb
     - title: Natural Language Processing (NLP)
       children:
-        - title: Text Preprocessing
-          url: nlp/01-text-preprocessing.ipynb
-        - title: Word Embeddings
-          url: nlp/02-word-embeddings.ipynb
-        - title: Text Classification and Sentiment Analysis
-          url: nlp/03-text-classification.ipynb
+        - file: nlp/01-text-preprocessing.ipynb
+        - file: nlp/02-word-embeddings.ipynb
+        - file: nlp/03-text-classification.ipynb
     - title: Advanced Topics and Special Cases
       children:
-        - title: Generative Adversarial Networks (GANs)
-          url: advanced/01-gans.ipynb
-        - title: Transfer Learning
-          url: advanced/02-transfer-learning.ipynb
-        - title: Reinforcement Learning
-          url: advanced/03-reinforcement-learning.ipynb
+        - file: advanced/01-gans.ipynb
+        - file: advanced/02-transfer-learning.ipynb
+        - file: advanced/03-reinforcement-learning.ipynb
     - title: Model Evaluation and Interpretability
       children:
-        - title: Model Evaluation Metrics
-          url: evaluation/01-evaluation-metrics.ipynb
-        - title: Cross-Validation and Hyperparameter Tuning
-          url: evaluation/02-cross-validation.ipynb
-        - title: Model Interpretability Techniques
-          url: evaluation/03-model-interpretability.ipynb
+        - file: evaluation/01-evaluation-metrics.ipynb
+        - file: evaluation/02-cross-validation.ipynb
+        - file: evaluation/03-model-interpretability.ipynb
+
+site:
+  template: book-theme  # Choose your preferred theme: book-theme or article-theme
+  options:
+    hide_toc: false             # Show the primary sidebar table of contents
+    hide_footer_links: true     # Hide the footer navigation links
+    hide_outline: false         # Show the secondary sidebar outline for page-level navigation
+    hide_title_block: false      # Hides the title at the top of each page
+    outline_maxdepth: 2         # Set max depth of outline if needed
+    favicon: _static/my-favicon.ico  # Add your favicon path here
+    logo: _static/my-site-logo.svg  # Add your logo path here
+    logo_text: "Machine Learning Guide"  # Short text to display next to logo at the top
+  # Do not include a nav entry here to avoid top navigation links
