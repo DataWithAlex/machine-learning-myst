@@ -1,7 +1,7 @@
 version: 1
 project:
-  title: My Machine Learning Site
-  description: A collection of Jupyter Notebooks on machine learning.
+  title: Machine Learning Guide
+  description: A comprehensive collection of Jupyter Notebooks covering machine learning concepts from basics to advanced topics.
   authors:
     - name: Alex Sciuto
       affiliations:
@@ -11,15 +11,97 @@ site:
   nav:
     - title: Home
       url: index.md
-    - title: Intro
+    - title: Introduction
       children:
-        - title: Introduction Notebook
-          url: intro/01-intro.ipynb
-        - title: Getting Started
-          url: intro/02-getting-started.ipynb
-    - title: Analysis
+        - title: What is Machine Learning?
+          url: intro/01-intro-to-ml.ipynb
+        - title: Types of Machine Learning
+          url: intro/02-types-of-ml.ipynb
+        - title: Occam's Razor in Machine Learning
+          url: intro/03-occams-razor.ipynb
+    - title: Basic Statistics and Data Exploration
       children:
-        - title: Analysis Notebook
-          url: analysis/02-analysis.ipynb
-        - title: Data Visualization
-          url: analysis/02-data-visualization.ipynb
+        - title: Descriptive Statistics
+          url: stats/01-descriptive-statistics.ipynb
+        - title: Data Distribution
+          url: stats/02-data-distribution.ipynb
+        - title: Correlation and Covariance
+          url: stats/03-correlation-covariance.ipynb
+    - title: Data Preprocessing and Feature Engineering
+      children:
+        - title: Handling Missing Values
+          url: preprocessing/01-missing-values.ipynb
+        - title: Feature Scaling and Normalization
+          url: preprocessing/02-feature-scaling.ipynb
+        - title: Categorical Data Encoding
+          url: preprocessing/03-categorical-encoding.ipynb
+        - title: Feature Selection Techniques
+          url: preprocessing/04-feature-selection.ipynb
+    - title: Simple Models and Baselines
+      children:
+        - title: Mean and Median as Predictors
+          url: simple/01-mean-median.ipynb
+        - title: Linear Regression
+          url: simple/02-linear-regression.ipynb
+        - title: Logistic Regression
+          url: simple/03-logistic-regression.ipynb
+    - title: Decision Trees and Ensemble Methods
+      children:
+        - title: Decision Trees
+          url: ensemble/01-decision-trees.ipynb
+        - title: Random Forests
+          url: ensemble/02-random-forests.ipynb
+        - title: Gradient Boosting and XGBoost
+          url: ensemble/03-gradient-boosting.ipynb
+    - title: Support Vector Machines (SVM)
+      children:
+        - title: Linear SVM
+          url: svm/01-linear-svm.ipynb
+        - title: Kernel SVM
+          url: svm/02-kernel-svm.ipynb
+    - title: Clustering and Dimensionality Reduction
+      children:
+        - title: K-Means Clustering
+          url: clustering/01-k-means.ipynb
+        - title: Hierarchical Clustering
+          url: clustering/02-hierarchical-clustering.ipynb
+        - title: Principal Component Analysis (PCA)
+          url: clustering/03-pca.ipynb
+    - title: Advanced Regression Techniques
+      children:
+        - title: Ridge and Lasso Regression
+          url: advanced-regression/01-ridge-lasso.ipynb
+        - title: Polynomial Regression
+          url: advanced-regression/02-polynomial.ipynb
+    - title: Neural Networks and Deep Learning
+      children:
+        - title: Multilayer Perceptron (MLP)
+          url: deep-learning/01-mlp.ipynb
+        - title: Convolutional Neural Networks (CNN)
+          url: deep-learning/02-cnn.ipynb
+        - title: Recurrent Neural Networks (RNN) and LSTMs
+          url: deep-learning/03-rnn-lstm.ipynb
+    - title: Natural Language Processing (NLP)
+      children:
+        - title: Text Preprocessing
+          url: nlp/01-text-preprocessing.ipynb
+        - title: Word Embeddings
+          url: nlp/02-word-embeddings.ipynb
+        - title: Text Classification and Sentiment Analysis
+          url: nlp/03-text-classification.ipynb
+    - title: Advanced Topics and Special Cases
+      children:
+        - title: Generative Adversarial Networks (GANs)
+          url: advanced/01-gans.ipynb
+        - title: Transfer Learning
+          url: advanced/02-transfer-learning.ipynb
+        - title: Reinforcement Learning
+          url: advanced/03-reinforcement-learning.ipynb
+    - title: Model Evaluation and Interpretability
+      children:
+        - title: Model Evaluation Metrics
+          url: evaluation/01-evaluation-metrics.ipynb
+        - title: Cross-Validation and Hyperparameter Tuning
+          url: evaluation/02-cross-validation.ipynb
+        - title: Model Interpretability Techniques
+          url: evaluation/03-model-interpretability.ipynb
